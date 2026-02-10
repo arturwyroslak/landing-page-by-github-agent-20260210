@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produkt — Landing Page</title>
+  <meta name="description" content="Prosty, responsywny landing page stworzony przez GITHUB-AGENT." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Logo produktu"> 
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="24" height="24" rx="6" fill="#2563EB"></rect>
+          <path d="M6 12h12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand">MójProdukt</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="nav" hidden>
+        <ul>
+          <li><a href="#features">Funkcje</a></li>
+          <li><a href="#pricing">Cennik</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Prosty produkt, wielkie rezultaty</h1>
+        <p class="lede">Rozpocznij już dziś — szybkie wdrożenie, intuicyjna obsługa i świetne wsparcie.</p>
+        <a class="btn primary" href="#contact">Zacznij teraz</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <article class="feature">
+        <h2>Łatwy start</h2>
+        <p>Przejrzysty interfejs pozwala zacząć pracę w kilka minut.</p>
+      </article>
+      <article class="feature">
+        <h2>Bezpieczeństwo</h2>
+        <p>Dane chronione zgodnie z najlepszymi praktykami.</p>
+      </article>
+      <article class="feature">
+        <h2>Wsparcie</h2>
+        <p>Szybka pomoc i dokumentacja dostępna 24/7.</p>
+      </article>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2>Prosty cennik</h2>
+        <p>Wybierz plan, który odpowiada Twoim potrzebom.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Kontakt</h2>
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Imię</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button class="btn" type="submit">Wyślij</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 MójProdukt. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
